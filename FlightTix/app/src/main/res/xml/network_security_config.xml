@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dev config: the Identus Cloud Agent and Mediator are plain HTTP on the local
+     network. Mirrors the iOS app's NSAllowsArbitraryLoads / NSAllowsLocalNetworking. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
